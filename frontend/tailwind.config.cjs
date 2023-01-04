@@ -296,6 +296,9 @@ module.exports = {
       "2xl": "0 25px 50px -12px rgb(0 0 0 / 0.25)",
       inner: "inset 0 2px 4px 0 rgb(0 0 0 / 0.05)",
       none: "none",
+      primary: "0 0 10px 8px #85a8f8",
+      secondary: "0 0 10px 8px #aec8fc",
+      minimal: "0 0 10px 8px #d6e4fd",
     },
     boxShadowColor: ({ theme }) => theme("colors"),
     caretColor: ({ theme }) => theme("colors"),
@@ -940,6 +943,7 @@ module.exports = {
     },
     transitionDuration: {
       DEFAULT: "150ms",
+      0: "0ms",
       75: "75ms",
       100: "100ms",
       150: "150ms",

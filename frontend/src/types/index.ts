@@ -1,1 +1,2 @@
-export * from './Iio'
+export * from "./Iio";
+export * from "./Iicon";
