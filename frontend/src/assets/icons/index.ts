@@ -1,2 +1,2 @@
-export * from "./Trash";
-export * from "./BatteryEmpty";
+export * from './Trash';
+export * from './BatteryEmpty';

@@ -6,6 +6,6 @@ export interface ServerToClientEvents {
 }
 
 export interface ClientToServerEvents {
-  hello: (data:any) => void;
+  hello: (data: any) => void;
   sendDataClient: (d: any) => void;
 }

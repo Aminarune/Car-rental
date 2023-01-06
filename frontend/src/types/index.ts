@@ -1,2 +1,2 @@
-export * from "./Iio";
-export * from "./Iicon";
+export * from './Iio';
+export * from './Iicon';
