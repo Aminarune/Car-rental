@@ -12,6 +12,9 @@ export default defineConfig({
       },
     }),
     react(),
-    eslint(),
+    eslint({
+      fix: true,
+      cache: true,
+    }),
   ],
 });
