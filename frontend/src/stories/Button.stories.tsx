@@ -6,7 +6,7 @@ import { TrashFilled } from '../assets';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Component/Button',
+  title: 'Components/Button',
   component: Button,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 } as ComponentMeta<typeof Button>;
@@ -27,30 +27,40 @@ export const Secondary = Template.bind({});
 Secondary.args = {
   type: 'secondary',
   children: 'Button',
+  size: 'small',
+  position: 'left',
 };
 
 export const Minimal = Template.bind({});
 Minimal.args = {
   type: 'minimal',
   children: 'Button',
+  size: 'small',
+  position: 'left',
 };
 
 export const Large = Template.bind({});
 Large.args = {
   size: 'large',
   children: 'Button',
+  type: 'secondary',
+  position: 'left',
 };
 
 export const Medium = Template.bind({});
 Medium.args = {
   size: 'medium',
   children: 'Button',
+  type: 'secondary',
+  position: 'left',
 };
 
 export const Small = Template.bind({});
 Small.args = {
   size: 'small',
   children: 'Button',
+  type: 'secondary',
+  position: 'left',
 };
 
 export const Left = Template.bind({});

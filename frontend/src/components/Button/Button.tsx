@@ -34,7 +34,7 @@ const getSizeClasses = (size: SizeProps) => {
       return 'px-4 py-1 h-7';
     }
     case 'large': {
-      return 'px-6 py-3 h-14';
+      return 'px-6 py-3 h-11';
     }
     default: {
       return 'px-4 py-2 h-8';
@@ -121,7 +121,7 @@ const getIconClasses = (type: TypeProps, size: SizeProps) => {
   }
 };
 
-export const Button = ({
+export const Button: React.FC<ButtonProps> = ({
   type = 'secondary',
   size = 'small',
   children,
@@ -129,7 +129,7 @@ export const Button = ({
   position = 'left',
   icon,
   ...props
-}: ButtonProps) => {
+}) => {
   const buttonClasses = useMemo(() => {
     const modeClass = getTypeClasses(type);
     const sizeClass = getSizeClasses(size);
